@@ -1,0 +1,29 @@
+nterms=int(input("enter a number:"))
+n1,n2=0,1
+count=0
+if nterms<=0:
+    print("enter a positive integers")
+elif nterms==1:
+    print("fibonacci sequence upto:",nterms)
+    print(n1)
+else:
+    print("fibonacci sequence:")
+    while (count<nterms):
+        print(n1)
+        nth=n1+n2
+        n1=n2
+        n2=nth
+        count+=1
+       
+
+output:
+enter a number:7
+fibonacci sequence:
+0
+1
+1
+2
+3
+5
+8
+> 
